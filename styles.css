@@ -1,12 +1,15 @@
 *{
     box-sizing: border-box;
     font-family: monospace;
-    font-size: 22px;
-    font-weight: 600;
 }
 
 body{
     background: linear-gradient(to right, #7b00ff, #f394ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 .clock{
@@ -14,7 +17,7 @@ body{
     height: 300px;
     background-color: rgba(255, 255, 255,.6);
     border-radius: 50%;
-    border: 2px solid black;
+    border: 3px ridge #490052;
     position: relative;
 }
 
@@ -25,6 +28,8 @@ body{
     width: 100%;
     text-align: center;
     transform: rotate(var(--rotation));
+    font-size: 24px;
+    font-weight: 600;
 }
 
 /* Placing the numbers in clock in circle */
@@ -45,12 +50,42 @@ body{
     position: absolute;
     bottom: 50%;
     left: 50%;
-    width: 10px;
-    height: 40%;
     background-color: #490052;
     border: 1px solid rgba(255, 255, 255,.6);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     transform-origin: bottom ;
+    z-index: 10;
     transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.clock .hand.sec{
+    width: 3px;
+    height: 45%;
+    background-color: red;
+}
+
+.clock .hand.min{
+    width: 7px;
+    height: 40%;
+    background-color: #490052;
+}
+
+.clock .hand.hour{
+    width: 10px;
+    height: 35%;
+    background-color: #490052;
+}
+
+.clock::after{
+    content: '';
+    position: absolute;
+    background-color: #2b0031;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
 }
