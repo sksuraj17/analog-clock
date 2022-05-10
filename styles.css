@@ -29,26 +29,30 @@ body{
     width: 100%;
     text-align: center;
     transform: rotate(var(--rotation));
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
 }
 
 .clock .number12{
+    font-size: 24px;
     font-weight: 600;
     color: #000000;
 }
 
 .clock .number3{
+    font-size: 24px;
     font-weight: 600;
     color: #000000;
 }
 
 .clock .number6{
+    font-size: 24px;
     font-weight: 600;
     color: #000000;
 }
 
 .clock .number9{
+    font-size: 24px;
     font-weight: 600;
     color: #000000;
 }
@@ -83,19 +87,19 @@ body{
 .clock .hand.sec{
     width: 3px;
     height: 45%;
-    background-color: red;
+    background-color: rgb(255, 0, 0);
 }
 
 .clock .hand.min{
     width: 6px;
     height: 40%;
-    background-color: #490052;
+    background-color: #15005c;
 }
 
 .clock .hand.hour{
     width: 9px;
     height: 35%;
-    background-color: #490052;
+    background-color: #15005c;
 }
 
 .clock::after{
