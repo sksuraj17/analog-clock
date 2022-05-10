@@ -30,7 +30,7 @@ body{
     text-align: center;
     transform: rotate(var(--rotation));
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .clock .number12{
