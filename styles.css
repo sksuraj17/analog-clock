@@ -33,6 +33,26 @@ body{
     font-weight: 600;
 }
 
+.clock .number12{
+    font-weight: 600;
+    color: #000000;
+}
+
+.clock .number3{
+    font-weight: 600;
+    color: #000000;
+}
+
+.clock .number6{
+    font-weight: 600;
+    color: #000000;
+}
+
+.clock .number9{
+    font-weight: 600;
+    color: #000000;
+}
+
 /* Placing the numbers in clock in circle */
 .clock .number1{ --rotation: 30deg;}
 .clock .number2{ --rotation: 60deg;}
