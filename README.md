@@ -1,3 +1,4 @@
 # Analog-Clock
 Realtime - Analog Clock --> using HTML, CSS, JavaScript
-![image](https://user-images.githubusercontent.com/64256552/167656229-068f9861-69aa-4be1-8829-09e35722b504.png)
+
+![image](https://user-images.githubusercontent.com/64256552/167671487-40b9d079-cffb-4597-9ccf-953cbc6487c3.png)
